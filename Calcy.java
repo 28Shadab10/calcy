@@ -26,7 +26,7 @@ public class Calcy {
         int input;
         input = sc.nextInt();
 
-        if (input == 1) {
+         if (input == 1) {
             // operation for Sum +
     cal = a + b;
           System.out.println("Sum is "+cal);
@@ -38,12 +38,17 @@ public class Calcy {
                 cal = b - a;
             }
             System.out.println("Substracted value is " + cal);
+
         } else if (input == 3) {
             // operation for Division /
+            cal = a / b;
+            System.out.println("the value is  " + cal);
+        
         } else if (input == 4) {
             // operation for Multiplication *
 
-        } else {
+        }
+        else{
             System.out.println("Enter valid input");
         }
     }
