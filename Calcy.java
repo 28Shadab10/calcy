@@ -1,6 +1,7 @@
 import java.util.Scanner;
 
 public class Calcy {
+public class Calcy {
 
     public static void main(String[] args) {
 
@@ -26,7 +27,7 @@ public class Calcy {
         int input;
         input = sc.nextInt();
 
-         if (input == 1) {
+       if (input == 1) {
             // operation for Sum +
     cal = a + b;
           System.out.println("Sum is "+cal);
@@ -44,13 +45,14 @@ public class Calcy {
             cal = a / b;
             System.out.println("the value is  " + cal);
         
-        } else if (input == 4) {
+        }else if (input == 4) {
             // operation for Multiplication *
-
-        }
+            cal = a * b;
+            System.out.println("The product is " + cal);
+        } 
         else{
             System.out.println("Enter valid input");
         }
     }
-
+}
 }
