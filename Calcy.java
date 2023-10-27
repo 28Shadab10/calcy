@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-public class Calcy{
+public class Calcy {
 
-    public static void main(String[] args){
+    public static void main(String[] args) {
 
         int a;
         int b;
@@ -12,8 +12,8 @@ public class Calcy{
         int quotient;
 
         Scanner sc = new Scanner(System.in);
-        System.out.println( "Enter 2 Numbers :- ");
-        System.out.println( "Enter First Number :- ");
+        System.out.println("Enter 2 Numbers :- ");
+        System.out.println("Enter First Number :- ");
         a = sc.nextInt();
         System.out.println("Enter Second Number :- ");
         b = sc.nextInt();
@@ -26,21 +26,23 @@ public class Calcy{
         int input;
         input = sc.nextInt();
 
-        if(input == 1){
-        // operation for Sum +
-      
-        }
-        else if(input == 2){
-        // operation for Substraction - 
-    
-        }else if(input == 3){
-        // operation for Division / 
-        }
-        else if (input == 4){
-        // operation for Multiplication *
+        if (input == 1) {
+            // operation for Sum +
 
-        }
-        else{
+        } else if (input == 2) {
+            // operation for Substraction -
+            if (a > b) {
+                cal = a - b;
+            } else {
+                cal = b - a;
+            }
+            System.out.println("Substracted value is " + cal);
+        } else if (input == 3) {
+            // operation for Division /
+        } else if (input == 4) {
+            // operation for Multiplication *
+
+        } else {
             System.out.println("Enter valid input");
         }
     }
