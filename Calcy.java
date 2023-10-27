@@ -28,7 +28,8 @@ public class Calcy{
 
         if(input == 1){
         // operation for Sum +
-      
+          cal = a + b;
+          System.out.println("Sum is "+cal);
         }
         else if(input == 2){
         // operation for Substraction - 
